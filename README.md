@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# Frontend de la Aplicación de Gestión de Tareas (ToDo List)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el frontend para la aplicación de gestión de tareas (ToDo List), construido con React.
 
-Currently, two official plugins are available:
+## Estructura del Repositorio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **src**: Contiene el código fuente de la aplicación React.
+- **public**: Contiene archivos estáticos como el HTML base.
+- **sass**: Contiene los archivos de estilos escritos en SASS.
 
-## Expanding the ESLint configuration
+## Requerimientos Técnicos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Tecnologías Utilizadas**: React, SASS.
+- **Gestión del Estado**: Redux Toolkit.
+- **Llamadas a la API**: Axios o Fetch.
+- **Rutas Protegidas**: React Router para la gestión de rutas protegidas.
+- **Responsividad**: La aplicación está diseñada para ser completamente usable en dispositivos móviles.
 
-- Configure the top-level `parserOptions` property like this:
+## Configuración y Ejecución
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Sigue estos pasos para configurar y ejecutar el frontend:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clona este repositorio.
+2. Instala las dependencias utilizando el comando `npm install`.
+3. Ejecuta la aplicación utilizando el comando `npm start`.
+
+La aplicación estará disponible en [http://localhost:3000](http://localhost:3000).
+
+## Estructura de Carpetas
+
+- **src/components**: Componentes de React reutilizables.
+- **src/pages**: Páginas principales de la aplicación.
+- **src/store**: Configuración del store de Redux y reducers.
+- **src/utils**: Utilidades y funciones útiles.
+- **src/styles**: Estilos globales y archivos de estilos SASS.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas contribuir al frontend de la aplicación de gestión de tareas, sigue estos pasos:
+1. Haz un fork del repositorio.
+2. Crea una rama con el nombre de tu funcionalidad (`git checkout -b feature/nueva-funcionalidad`).
+3. Haz tus cambios y commitea (`git commit -am 'Agrega nueva funcionalidad'`).
+4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
+5. Crea un pull request.
+
+## Autor
+
+Este frontend fue creado por Anthony Tamayo Ortega - anthony1_144@hotmail.com
